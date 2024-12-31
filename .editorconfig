@@ -9,13 +9,17 @@ insert_final_newline = true
 max_line_length = 120
 tab_width = 4
 
-[*.{md,sh}]
+[*.{json,md,sh}]
 max_line_length = 1024
 indent_size = 2
 tab_width = 2
 
 [*.bat]
 end_of_line = crlf
+
+[*.pem]
+max_line_length = 64
+insert_final_newline = false
 
 # noinspection EditorConfigKeyCorrectness
 [*.{kt,kts}]
