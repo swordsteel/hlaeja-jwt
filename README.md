@@ -2,6 +2,16 @@
 
 In quiet chambers of learning, where minds are aglow, A ledger of endorsements, the authenticity to bestow. Each certificate approved, with scrutiny and might, Their legitimacy confirmed, in the light of day and night. From manuscripts to databases, knowledge is refined, Librarians and experts, their judgment to define. The Approval Archive, a sacred trust to hold, A testament to credentials, where merit is told.
 
+## Properties
+
+The following properties can be used to configure the deployment of your application. If specified, these properties will load their respective services.
+
+| name            | info                                                                                                                                       |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| jwt.private-key | Location of the private key file. If specified, the `PrivateJwtService` will be loaded with the provided private key for signing purposes. |
+
+**Note:** The `jwt.private-key` property is optional and corresponds to the `PrivateJwtService`. If specified, this service will be loaded for signing purposes.
+
 ## Releasing library
 
 Run `release.sh` script from `master` branch.
