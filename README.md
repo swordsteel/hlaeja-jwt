@@ -6,11 +6,16 @@ In quiet chambers of learning, where minds are aglow, A ledger of endorsements, 
 
 The following properties can be used to configure the deployment of your application. If specified, these properties will load their respective services.
 
-| name            | info                                                                                                                                       |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| jwt.private-key | Location of the private key file. If specified, the `PrivateJwtService` will be loaded with the provided private key for signing purposes. |
+| name            | info                                                                                                                                                 |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| jwt.private-key | Location of the private key file. If specified, the `PrivateJwtService` will be loaded with the provided private key for signing purposes.           |
+| jwt.public-key  | Location of the public key file. If specified, the `PublicJwtService` service will be loaded with the provided public key for verification purposes. |
 
-**Note:** The `jwt.private-key` property is optional and corresponds to the `PrivateJwtService`. If specified, this service will be loaded for signing purposes.
+**Note:** The `jwt.private-key` and `jwt.public-key` properties are optional and correspond to separate services: `PrivateJwtService` and `PublicJwtService`, respectively. If either property is specified, its corresponding service will be loaded. For example:
+
+- Specifying only `jwt.private-key` will load the `PrivateJwtService` for signing purposes.
+- Specifying only `jwt.public-key` will load the `PublicJwtService` for verification purposes.
+- Specifying both properties will enable both services, allowing for full JWT functionality with authentication and authorization.
 
 ## Releasing library
 
