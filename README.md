@@ -19,7 +19,7 @@ The following properties can be used to configure the deployment of your applica
 
 ## Releasing library
 
-Run `release.sh` script from `master` branch.
+Run release pipeline from `master` branch.
 
 ## Publishing library
 
