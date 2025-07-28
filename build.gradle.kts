@@ -1,9 +1,9 @@
 plugins {
     alias(hlaeja.plugins.kotlin.jvm)
     alias(hlaeja.plugins.kotlin.spring)
-    alias(hlaeja.plugins.ltd.hlaeja.plugin.library)
+    alias(hlaeja.plugins.spring.boot)
     alias(hlaeja.plugins.spring.dependency.management)
-    alias(hlaeja.plugins.springframework.boot)
+    alias(hlaeja.plugins.library)
 }
 
 dependencies {
